@@ -36,6 +36,6 @@ public class WorksWithHerokuServletTest {
         when(response.getWriter()).thenReturn(writer);
 
         servlet.doGet(request, response);
-        assertEquals("Buddy Works with NBT", new String( out.toByteArray(), "UTF-8"));
+        assertEquals("Buddy Works with NBT-updated", new String( out.toByteArray(), "UTF-8"));
     }
 }
